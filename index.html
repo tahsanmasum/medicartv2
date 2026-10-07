@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Medicart · Clinical Console</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cantora+One&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
-:root{--ink:#162b2a;--muted:#768582;--line:#e7edeb;--bg:#f4f7f5;--green:#087f68;--mint:#e6f5ef;--nav:#112927;--red:#d94e50;--amber:#d18a22;--blue:#427cbd}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:'DM Sans',sans-serif;color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:238px 1fr}.sidebar{background:var(--nav);color:#d9e5e1;padding:25px 16px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;padding:0 10px 31px;color:#fff;font:800 20px Manrope}.brand-icon{height:36px;width:36px;border-radius:12px;background:#47c49b;display:grid;place-items:center;color:#12382f;font-size:20px}.brand small{display:block;color:#8aaba2;font:500 10px 'DM Sans';letter-spacing:.13em;margin-top:2px}.nav-label{font-size:10px;letter-spacing:.14em;color:#809b94;padding:0 11px;margin:8px 0}.nav{display:grid;gap:5px}.nav button{border:0;background:none;color:#adc1bc;text-align:left;padding:11px 12px;border-radius:9px;display:flex;gap:12px;align-items:center;font-size:13px}.nav button.active{color:#fff;background:#254842}.nav button:hover{background:#1b3b35}.ico{width:18px;text-align:center;font-size:16px}.device-card{margin-top:auto;border:1px solid #31504a;background:#1b3b35;border-radius:12px;padding:14px}.device-title{font-size:11px;color:#91aca4;display:flex;justify-content:space-between}.device-name{font:700 14px Manrope;color:white;margin:8px 0 5px}.online{font-size:11px;color:#77dfae}.online:before{content:'';display:inline-block;background:#4dd28e;width:7px;height:7px;border-radius:50%;margin-right:6px}.main{padding:26px 32px 36px;max-width:1600px;width:100%;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}.crumb{font-size:12px;color:var(--muted)}h1{font:800 24px Manrope;margin:5px 0 0;letter-spacing:-.04em}.topright{display:flex;align-items:center;gap:17px}.badge{padding:7px 11px;border-radius:20px;background:#e6f4ed;color:#26785b;font-size:11px;font-weight:700}.avatar{width:36px;height:36px;background:#d9e8e3;border-radius:50%;display:grid;place-items:center;color:#37665a;font-size:12px;font-weight:700}.doctor{font-size:12px;font-weight:600}.doctor small{display:block;color:var(--muted);font-weight:400;margin-top:2px}.callbanner{display:flex;align-items:center;justify-content:space-between;background:#e6f4ee;border:1px solid #d3e9df;padding:14px 18px;border-radius:12px;margin-bottom:18px}.call-left{display:flex;align-items:center;gap:12px}.call-icon{width:35px;height:35px;border-radius:11px;background:white;display:grid;place-items:center;font-size:16px}.calltitle{font-size:13px;font-weight:700}.callsub{font-size:11px;color:#6a827b;margin-top:3px}.callbtn{border:0;border-radius:8px;background:var(--green);color:white;font-weight:700;font-size:12px;padding:10px 15px}.callbtn:hover{background:#066b58}.grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.9fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:13px;box-shadow:0 3px 12px #1d3b3307;overflow:hidden}.cardhead{padding:16px 18px 13px;display:flex;align-items:center;justify-content:space-between}.cardtitle{font:700 14px Manrope}.sub{font-size:11px;color:var(--muted);margin-top:4px}.tag{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:6px;background:#f0f4f2;font-size:10px;color:#637571;font-weight:700}.tag.live{background:#fff0ee;color:#cb5149}.tag.live:before{content:'';width:6px;height:6px;background:#e7655e;border-radius:50%;animation:pulse 1.4s infinite}@keyframes pulse{50%{opacity:.3}}.video{height:304px;background:linear-gradient(135deg,#142c29,#26443c 55%,#172e2a);position:relative;overflow:hidden;display:grid;place-items:center;color:white}.video:before{content:'';position:absolute;width:410px;height:245px;border:1px solid #ffffff10;border-radius:50%;transform:rotate(-20deg)}.cam-placeholder{text-align:center;z-index:1}.cam-graphic{width:82px;height:60px;border:2px solid #83a59a;border-radius:12px;margin:auto auto 13px;position:relative;opacity:.72}.cam-graphic:before{content:'';position:absolute;left:28px;top:10px;width:22px;height:22px;border:2px solid #83a59a;border-radius:50%}.cam-graphic:after{content:'';position:absolute;left:34px;top:17px;width:10px;height:10px;background:#83a59a;border-radius:50%}.cam-placeholder strong{font:600 13px Manrope}.cam-placeholder small{display:block;color:#9fb6af;font-size:11px;margin-top:5px}.video-label{position:absolute;left:14px;top:14px;display:flex;gap:7px}.video-label span{font-size:10px;color:#e0ede8;background:#152b28bc;border:1px solid #ffffff20;border-radius:5px;padding:6px 8px}.video-label .rec{color:#ffb2a8}.video-label .rec:before{content:'● ';font-size:8px}.video-time{position:absolute;right:14px;top:14px;background:#132723bb;color:white;font-size:10px;padding:6px 8px;border-radius:5px}.video-controls{position:absolute;bottom:14px;left:14px;right:14px;display:flex;align-items:center;justify-content:space-between}.vc-left,.vc-right{display:flex;gap:7px}.vc{border:1px solid #ffffff35;color:white;background:#102522c9;border-radius:7px;padding:8px 10px;font-size:11px}.vc.enabled{background:#b43c3c}.conf-note{font-size:10px;color:#b8c9c3}.vision-row{display:flex;justify-content:space-between;align-items:center;padding:12px 17px;border-top:1px solid var(--line);font-size:11px;color:#63746f}.vision{display:flex;align-items:center;gap:7px;color:#39866e;font-weight:600}.columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:0 15px 16px}.metric{border:1px solid #edf1ef;border-radius:10px;padding:12px}.metric-head{font-size:10px;color:var(--muted);display:flex;justify-content:space-between}.metric-val{font:700 23px Manrope;margin-top:7px;letter-spacing:-.03em}.unit{font-size:11px;color:#75827f;font-weight:500}.trend{font-size:10px;color:#57977b;margin-top:3px}.spark{height:21px;margin-top:4px;position:relative}.spark svg{width:100%;height:100%;overflow:visible}.spark path{fill:none;stroke:#5aaf89;stroke-width:2}.spark.warn path{stroke:#d59b45}.mqtt{font-size:10px;color:#67817a;display:flex;gap:6px;align-items:center}.mqtt:before{content:'';width:6px;height:6px;border-radius:50%;background:#4fc783}.assignment{padding:0 17px 16px}.patient-empty{border:1px dashed #d7e2dd;background:#fafcfb;padding:17px;border-radius:9px;text-align:center;margin-bottom:12px}.patient-empty strong{font:700 12px Manrope}.patient-empty p{font-size:10px;color:var(--muted);margin:5px 0 0}.formrow{display:flex;gap:8px}.formrow input,.formrow select{min-width:0;width:100%;border:1px solid #dfe7e3;padding:9px 10px;border-radius:7px;font-size:11px;color:var(--ink);background:white}.assignbtn{margin-top:9px;width:100%;padding:10px;border:0;border-radius:7px;background:#162f2b;color:white;font-weight:700;font-size:11px}.bottom{display:grid;grid-template-columns:1.45fr .9fr;gap:18px;margin-top:18px}.events{padding:0 18px 14px}.event{display:flex;gap:11px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #f0f3f2}.event:last-child{border:0}.event-dot{height:8px;width:8px;border-radius:50%;background:#4dae85;margin-top:4px;flex:none}.event-dot.blue{background:#6997c8}.event-dot.gray{background:#aab9b4}.event-text{font-size:11px;color:#40534f}.event-text small{display:block;color:#98a49f;margin-top:3px;font-size:10px}.disclaimer{background:#fff8e9;color:#8a682b;border:1px solid #f1e6ca;border-radius:9px;padding:11px 13px;margin:0 0 14px;font-size:10px;line-height:1.5}.modalback{display:none;position:fixed;inset:0;background:#10221fa8;z-index:5;place-items:center}.modalback.show{display:grid}.modal{width:min(440px,calc(100% - 30px));background:#fff;border-radius:16px;padding:26px;text-align:center;box-shadow:0 20px 80px #10221f40}.modalclose{float:right;border:0;background:none;color:#87938e;font-size:20px}.modal .bigphone{width:55px;height:55px;border-radius:17px;background:#e4f4ec;color:#168264;margin:13px auto;display:grid;place-items:center;font-size:23px}.modal h2{font:800 20px Manrope;margin:12px 0 5px}.modal p{font-size:12px;color:var(--muted);line-height:1.6}.count{font:800 44px Manrope;color:#168264;margin:12px}.modalstatus{font-size:11px;color:#638078}.endbtn{border:0;border-radius:8px;background:#cf4d4d;color:#fff;font-weight:700;padding:10px 20px;margin-top:15px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#17342e;color:white;border-radius:9px;padding:11px 16px;font-size:12px;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}
+:root{--ink:#162b2a;--muted:#768582;--line:#e7edeb;--bg:#f4f7f5;--green:#087f68;--mint:#e6f5ef;--nav:#112927;--red:#d94e50;--amber:#d18a22;--blue:#427cbd}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:'DM Sans',sans-serif;color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:238px 1fr}.sidebar{background:var(--nav);color:#d9e5e1;padding:25px 16px;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:11px;padding:0 10px 31px;color:#fff;font:800 20px Manrope}.brand-icon{height:36px;width:36px;border-radius:12px;background:#47c49b;display:grid;place-items:center;color:#12382f;font-size:20px}.brand small{display:block;color:#8aaba2;font:500 10px 'DM Sans';letter-spacing:.13em;margin-top:2px}.nav-label{font-size:10px;letter-spacing:.14em;color:#809b94;padding:0 11px;margin:8px 0}.nav{display:grid;gap:5px}.nav button{border:0;background:none;color:#adc1bc;text-align:left;padding:11px 12px;border-radius:9px;display:flex;gap:12px;align-items:center;font-size:13px}.nav button.active{color:#fff;background:#254842}.nav button:hover{background:#1b3b35}.ico{width:18px;text-align:center;font-size:16px}.device-card{margin-top:auto;border:1px solid #31504a;background:#1b3b35;border-radius:12px;padding:14px}.device-title{font-size:11px;color:#91aca4;display:flex;justify-content:space-between}.device-name{font:700 14px Manrope;color:white;margin:8px 0 5px}.online{font-size:11px;color:#77dfae}.online:before{content:'';display:inline-block;background:#4dd28e;width:7px;height:7px;border-radius:50%;margin-right:6px}.main{padding:26px 32px 36px;max-width:1600px;width:100%;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}.crumb{font-size:12px;color:var(--muted)}h1{font:800 24px Manrope;margin:5px 0 0;letter-spacing:-.04em}.topright{display:flex;align-items:center;gap:17px}.badge{padding:7px 11px;border-radius:20px;background:#e6f4ed;color:#26785b;font-size:11px;font-weight:700}.avatar{width:36px;height:36px;background:#d9e8e3;border-radius:50%;display:grid;place-items:center;color:#37665a;font-size:12px;font-weight:700}.doctor{font-size:12px;font-weight:600}.doctor small{display:block;color:var(--muted);font-weight:400;margin-top:2px}.callbanner{display:flex;align-items:center;justify-content:space-between;background:#e6f4ee;border:1px solid #d3e9df;padding:14px 18px;border-radius:12px;margin-bottom:18px}.call-left{display:flex;align-items:center;gap:12px}.call-icon{width:35px;height:35px;border-radius:11px;background:white;display:grid;place-items:center;font-size:16px}.calltitle{font-size:13px;font-weight:700}.callsub{font-size:11px;color:#6a827b;margin-top:3px}.callbtn{border:0;border-radius:8px;background:var(--green);color:white;font-weight:700;font-size:12px;padding:10px 15px}.callbtn:hover{background:#066b58}.grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.9fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:13px;box-shadow:0 3px 12px #1d3b3307;overflow:hidden}.cardhead{padding:16px 18px 13px;display:flex;align-items:center;justify-content:space-between}.cardtitle{font:700 14px Manrope}.sub{font-size:11px;color:var(--muted);margin-top:4px}.tag{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border-radius:6px;background:#f0f4f2;font-size:10px;color:#637571;font-weight:700}.tag.live{background:#fff0ee;color:#cb5149}.tag.live:before{content:'';width:6px;height:6px;background:#e7655e;border-radius:50%;animation:pulse 1.4s infinite}@keyframes pulse{50%{opacity:.3}}.video{height:304px;background:linear-gradient(135deg,#142c29,#26443c 55%,#172e2a);position:relative;overflow:hidden;display:grid;place-items:center;color:white}.video:before{content:'';position:absolute;width:410px;height:245px;border:1px solid #ffffff10;border-radius:50%;transform:rotate(-20deg)}.cam-placeholder{text-align:center;z-index:1}.cam-graphic{width:82px;height:60px;border:2px solid #83a59a;border-radius:12px;margin:auto auto 13px;position:relative;opacity:.72}.cam-graphic:before{content:'';position:absolute;left:28px;top:10px;width:22px;height:22px;border:2px solid #83a59a;border-radius:50%}.cam-graphic:after{content:'';position:absolute;left:34px;top:17px;width:10px;height:10px;background:#83a59a;border-radius:50%}.cam-placeholder strong{font:600 13px Manrope}.cam-placeholder small{display:block;color:#9fb6af;font-size:11px;margin-top:5px}.video-label{position:absolute;left:14px;top:14px;display:flex;gap:7px}.video-label span{font-size:10px;color:#e0ede8;background:#152b28bc;border:1px solid #ffffff20;border-radius:5px;padding:6px 8px}.video-label .rec{color:#ffb2a8}.video-label .rec:before{content:'● ';font-size:8px}.video-time{position:absolute;right:14px;top:14px;background:#132723bb;color:white;font-size:10px;padding:6px 8px;border-radius:5px}.video-controls{position:absolute;bottom:14px;left:14px;right:14px;display:flex;align-items:center;justify-content:space-between}.vc-left,.vc-right{display:flex;gap:7px}.vc{border:1px solid #ffffff35;color:white;background:#102522c9;border-radius:7px;padding:8px 10px;font-size:11px}.vc.enabled{background:#b43c3c}.conf-note{font-size:10px;color:#b8c9c3}.vision-row{display:flex;justify-content:space-between;align-items:center;padding:12px 17px;border-top:1px solid var(--line);font-size:11px;color:#63746f}.vision{display:flex;align-items:center;gap:7px;color:#39866e;font-weight:600}.columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:0 15px 16px}.metric{border:1px solid #edf1ef;border-radius:10px;padding:12px}.metric-head{font-size:10px;color:var(--muted);display:flex;justify-content:space-between}.metric-val{font:700 23px Manrope;margin-top:7px;letter-spacing:-.03em}.unit{font-size:11px;color:#75827f;font-weight:500}.trend{font-size:10px;color:#57977b;margin-top:3px}.spark{height:21px;margin-top:4px;position:relative}.spark svg{width:100%;height:100%;overflow:visible}.spark path{fill:none;stroke:#5aaf89;stroke-width:2}.spark.warn path{stroke:#d59b45}.mqtt{font-size:10px;color:#67817a;display:flex;gap:6px;align-items:center}.mqtt:before{content:'';width:6px;height:6px;border-radius:50%;background:#4fc783}.assignment{padding:0 17px 16px}.patient-empty{border:1px dashed #d7e2dd;background:#fafcfb;padding:17px;border-radius:9px;text-align:center;margin-bottom:12px}.patient-empty strong{font:700 12px Manrope}.patient-empty p{font-size:10px;color:var(--muted);margin:5px 0 0}.formrow{display:flex;gap:8px}.formrow input,.formrow select{min-width:0;width:100%;border:1px solid #dfe7e3;padding:9px 10px;border-radius:7px;font-size:11px;color:var(--ink);background:white}.assignbtn{margin-top:9px;width:100%;padding:10px;border:0;border-radius:7px;background:#162f2b;color:white;font-weight:700;font-size:11px}.bottom{display:grid;grid-template-columns:1.45fr .9fr;gap:18px;margin-top:18px}.events{padding:0 18px 14px}.event{display:flex;gap:11px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #f0f3f2}.event:last-child{border:0}.event-dot{height:8px;width:8px;border-radius:50%;background:#4dae85;margin-top:4px;flex:none}.event-dot.blue{background:#6997c8}.event-dot.gray{background:#aab9b4}.event-text{font-size:11px;color:#40534f}.event-text small{display:block;color:#98a49f;margin-top:3px;font-size:10px}.disclaimer{background:#fff8e9;color:#8a682b;border:1px solid #f1e6ca;border-radius:9px;padding:11px 13px;margin:0 0 14px;font-size:10px;line-height:1.5}.modalback{display:none;position:fixed;inset:0;background:#10221fa8;z-index:5;place-items:center}.modalback.show{display:grid}.modal{width:min(440px,calc(100% - 30px));background:#fff;border-radius:16px;padding:26px;text-align:center;box-shadow:0 20px 80px #10221f40}.modalclose{float:right;border:0;background:none;color:#87938e;font-size:20px}.modal .bigphone{width:55px;height:55px;border-radius:17px;background:#e4f4ec;color:#168264;margin:13px auto;display:grid;place-items:center;font-size:23px}.modal h2{font:800 20px Manrope;margin:12px 0 5px}.modal p{font-size:12px;color:var(--muted);line-height:1.6}.count{font:800 44px Manrope;color:#168264;margin:12px}.modalstatus{font-size:11px;color:#638078}.endbtn{border:0;border-radius:8px;background:#cf4d4d;color:#fff;font-weight:700;padding:10px 20px;margin-top:15px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#17342e;color:white;border-radius:9px;padding:11px 16px;font-size:12px;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}.signal-panel{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin:-6px 0 18px;display:grid;grid-template-columns:minmax(210px,1.4fr) minmax(130px,.7fr) auto auto;gap:8px;align-items:center}.signal-panel input{min-width:0;border:1px solid #d9e2ec;border-radius:6px;padding:9px 10px;font-size:11px}.signal-panel button{border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#0f172a;padding:9px 11px;font-size:11px;font-weight:600}.signal-panel button.primary{background:#0067c5;color:#fff;border-color:#0067c5}.signal-state{font-size:10px;color:#64748b;grid-column:1/-1}.signal-state.online{color:#15803d}.signal-help{font-size:10px;color:#64748b;grid-column:1/-1}.video #remoteVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#071b39;z-index:0;display:none}.video.streaming #remoteVideo{display:block}.video.streaming .cam-placeholder{display:none}.video.streaming:before{display:none}.video.streaming .video-label{z-index:2}.video.streaming .video-time{z-index:2}.video.streaming .video-controls{z-index:2}@media(max-width:800px){.signal-panel{grid-template-columns:1fr 1fr}.signal-state,.signal-help{grid-column:1/-1}}
 @media(max-width:1000px){.app{grid-template-columns:190px 1fr}.main{padding:22px 20px}.grid,.bottom{grid-template-columns:1fr}.columns{grid-template-columns:1fr 1fr}}@media(max-width:700px){.app{display:block}.sidebar{display:none}.main{padding:18px 14px}.top{align-items:flex-start}.doctor{display:none}.columns{grid-template-columns:1fr}.callbanner{gap:12px}.callsub{max-width:220px}.video{height:245px}.topright .badge{display:none}}
 /* Visual language adapted from the earlier sensor monitoring dashboard. */
 body{--ink:#0f172a;--muted:#64748b;--line:#d9e2ec;--bg:#f7f9fc;--green:#0067c5;--mint:#eaf4ff;--nav:#fff;--red:#e31b23;font-family:Inter,-apple-system,sans-serif;background:#f7f9fc;color:#0f172a}
@@ -30,21 +30,256 @@ body{--ink:#0f172a;--muted:#64748b;--line:#d9e2ec;--bg:#f7f9fc;--green:#0067c5;-
 @media(max-width:1000px){.app{grid-template-columns:190px minmax(0,1fr)}.top{margin:-22px -20px 20px;padding:12px 20px}}
 @media(max-width:700px){.top{margin:-18px -14px 18px;padding:10px 14px}.sidebar{display:none}}
 </style></head>
-<body><div class="app"><aside class="sidebar"><div class="brand"><div class="brand-icon">✚</div><div>medicart<small>CLINICAL CONSOLE</small></div></div><div class="nav-label">WORKSPACE</div><nav class="nav"><button class="active"><span class="ico">▦</span>Overview</button><button><span class="ico">◉</span>Live camera</button><button><span class="ico">⌁</span>Vital monitoring</button><button><span class="ico">♧</span>Patients</button><button><span class="ico">◷</span>Activity log</button></nav><div class="device-card"><div class="device-title">CONNECTED DEVICE <span>•••</span></div><div class="device-name">Medicart · MC-204</div><div class="online">Demo device · no live connection</div></div></aside><main class="main"><header class="top"><div><div class="crumb">Workspace / Overview</div><h1>Medicart overview</h1></div><div class="topright"><span class="badge">● &nbsp;DEMO PREVIEW</span><div class="avatar">DR</div><div class="doctor">Dr. Rahman<small>Emergency care</small></div></div></header>
+<body><div class="app"><aside class="sidebar"><div class="brand"><div class="brand-icon">✚</div><div>medicart<small>CLINICAL CONSOLE</small></div></div><div class="nav-label">WORKSPACE</div><nav class="nav"><button class="active"><span class="ico">▦</span>Overview</button><button><span class="ico">◉</span>Live camera</button><button><span class="ico">⌁</span>Vital monitoring</button><button><span class="ico">♧</span>Patients</button><button><span class="ico">◷</span>Activity log</button></nav><div class="device-card"><div class="device-title">CONNECTED DEVICE <span>•••</span></div><div class="device-name" id="deviceName">Medicart · medicart-01</div><div class="online" id="deviceStatus">Offline · not connected</div></div></aside><main class="main"><header class="top"><div><div class="crumb">Workspace / Overview</div><h1>Medicart overview</h1></div><div class="topright"><span class="badge" id="headerState">● &nbsp;SIGNALING OFFLINE</span><div class="avatar">DR</div><div class="doctor">Dr. Rahman<small>Emergency care</small></div></div></header>
 <section class="callbanner"><div class="call-left"><div class="call-icon">☎</div><div><div class="calltitle">Start a live consultation</div><div class="callsub">Connect to Medicart speaker and camera for a two-way call.</div></div></div><button class="callbtn" id="startCall">☎ &nbsp; Call Medicart</button></section>
-<div class="grid"><section class="card"><div class="cardhead"><div><div class="cardtitle">Medicart camera</div><div class="sub">OpenCV visual monitoring · Front camera</div></div><span class="tag live">LIVE PREVIEW</span></div><div class="video"><div class="video-label"><span class="rec">CAMERA ACTIVE</span><span>OpenCV · 1280 × 720</span></div><div class="video-time">00:18:42</div><div class="cam-placeholder"><div class="cam-graphic"></div><strong>Camera stream placeholder</strong><small>Connect the Medicart video stream to view live feed</small></div><div class="video-controls"><div class="vc-left"><button class="vc" id="snapshot">▣ &nbsp; Snapshot</button><button class="vc">⛶ &nbsp; Full screen</button></div><span class="conf-note">Demo preview · No patient video</span></div></div><div class="vision-row"><span class="vision">● OpenCV pipeline · demo</span><span>Detection: ready &nbsp;·&nbsp; 24 FPS</span></div></section>
+<section class="signal-panel" aria-label="Call connection settings">
+  <input id="doctorToken" type="password" autocomplete="off" placeholder="Paste short-lived doctor access token" aria-label="Short-lived doctor access token">
+  <input id="cartId" value="medicart-01" autocomplete="off" placeholder="Medicart device ID" aria-label="Medicart device ID">
+  <button id="connectSignal" class="primary" type="button">Connect to cart</button>
+  <button id="disconnectSignal" type="button">Disconnect</button>
+  <div class="signal-state" id="signalState">Signaling disconnected</div>
+  <div class="signal-help">The token is used only in this browser session. The website must obtain it from a secure doctor login; never paste JWT_SECRET here.</div>
+</section>
+<div class="grid"><section class="card"><div class="cardhead"><div><div class="cardtitle">Medicart camera</div><div class="sub">OpenCV visual monitoring · Front camera</div></div><span class="tag" id="cameraBadge">WAITING FOR PI</span></div><div class="video" id="videoCard"><div class="video-label"><span class="rec">CAMERA OFFLINE</span><span>OpenCV · incoming WebRTC</span></div><div class="video-time" id="videoTime">00:00:00</div><video id="remoteVideo" autoplay playsinline></video><div class="cam-placeholder"><div class="cam-graphic"></div><strong>Waiting for Medicart video</strong><small>Connect to the cart, then start a call to receive its OpenCV stream</small></div><div class="video-controls"><div class="vc-left"><button class="vc" id="snapshot">▣ &nbsp; Snapshot</button><button class="vc">⛶ &nbsp; Full screen</button></div><span class="conf-note" id="mediaState">Encrypted WebRTC media · awaiting call</span></div></div><div class="vision-row"><span class="vision" id="cameraState">● OpenCV stream · offline</span><span id="videoStats">No incoming video</span></div></section>
 <section class="card"><div class="cardhead"><div><div class="cardtitle">Assign patient</div><div class="sub">Link this Medicart session to a patient record</div></div><span class="tag">SESSION MC-204</span></div><div class="assignment"><div id="patientState" class="patient-empty"><strong>No patient assigned</strong><p>Assign a patient to attach vitals and call notes to their visit.</p></div><div class="formrow"><input id="patientName" placeholder="Patient name" aria-label="Patient name"><input id="patientId" placeholder="Patient ID" aria-label="Patient ID"></div><div class="formrow" style="margin-top:8px"><select id="ward"><option value="">Select ward / bed</option><option>Emergency · Bed 04</option><option>ICU · Bed 12</option><option>General · Bed 08</option><option>Observation · Bed 02</option></select></div><button class="assignbtn" id="assign">＋ &nbsp; Assign patient</button></div><div class="disclaimer" style="margin:0 17px 16px">Patient data in this prototype is local demo content. Confirm identity in your clinical system before care.</div></section></div>
-<div class="columns"><section class="card"><div class="cardhead"><div><div class="cardtitle">Vital signs</div><div class="sub">Smart monitor · live sensor readings</div></div><div class="mqtt">MQTT · SIMULATED</div></div><div class="metric-grid"><div class="metric"><div class="metric-head"><span>Heart rate</span><span>♡</span></div><div class="metric-val">78 <span class="unit">bpm</span></div><div class="trend">Within expected range</div><div class="spark"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 14 L10 13 L18 16 L26 7 L34 17 L42 13 L51 14 L58 8 L66 16 L75 12 L84 14 L93 5 L101 15 L110 12 L120 13"/></svg></div></div><div class="metric"><div class="metric-head"><span>SpO₂</span><span>◉</span></div><div class="metric-val">98 <span class="unit">%</span></div><div class="trend">Within expected range</div><div class="spark"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 14 L12 13 L24 15 L35 12 L47 14 L58 13 L70 15 L82 12 L94 14 L106 12 L120 13"/></svg></div></div><div class="metric"><div class="metric-head"><span>IR signal</span><span>⌁</span></div><div class="metric-val">42,186</div><div class="trend">MAX30105 · raw signal</div><div class="spark"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 15 L8 14 L14 5 L20 18 L28 13 L35 14 L43 6 L50 17 L58 12 L66 14 L73 4 L80 17 L89 12 L98 13 L106 5 L114 17 L120 13"/></svg></div></div><div class="metric"><div class="metric-head"><span>RED signal</span><span>⌁</span></div><div class="metric-val">38,742</div><div class="trend">MAX30105 · raw signal</div><div class="spark warn"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 14 L9 13 L16 6 L23 17 L31 12 L40 13 L47 5 L55 16 L63 12 L72 14 L80 4 L88 16 L97 11 L105 13 L113 5 L120 14"/></svg></div></div></div></section>
-<section class="card"><div class="cardhead"><div><div class="cardtitle">Device & connection</div><div class="sub">Medicart status and data stream</div></div><span class="tag">MC-204</span></div><div class="events"><div class="event"><i class="event-dot"></i><div class="event-text">MQTT broker connected<small>Secure sensor stream · Topic: medicart/MC-204/vitals</small></div></div><div class="event"><i class="event-dot blue"></i><div class="event-text">Speaker and microphone ready<small>Two-way audio · Browser permission required</small></div></div><div class="event"><i class="event-dot"></i><div class="event-text">OpenCV camera pipeline running<small>Video source awaiting device stream</small></div></div><div class="event"><i class="event-dot gray"></i><div class="event-text">Last device sync<small>Today, 10:42:18 AM</small></div></div></div></section></div>
-<div class="bottom"><section class="card"><div class="cardhead"><div><div class="cardtitle">Recent activity</div><div class="sub">Latest events from this Medicart</div></div><span class="tag">TODAY</span></div><div class="events"><div class="event"><i class="event-dot"></i><div class="event-text">Vitals stream started<small>10:41 AM · MQTT · All sensors reporting</small></div></div><div class="event"><i class="event-dot blue"></i><div class="event-text">OpenCV camera initialized<small>10:40 AM · Front camera · 24 FPS</small></div></div><div class="event"><i class="event-dot gray"></i><div class="event-text">Medicart connected to console<small>10:38 AM · MC-204 · Wi-Fi</small></div></div></div></section><section class="card"><div class="cardhead"><div><div class="cardtitle">Call flow</div><div class="sub">What happens when you call</div></div><span class="tag">2-WAY AUDIO</span></div><div class="events"><div class="event"><i class="event-dot"></i><div class="event-text">Doctor starts call from dashboard<small>Browser requests microphone access</small></div></div><div class="event"><i class="event-dot blue"></i><div class="event-text">Medicart announces “Connecting to doctor”<small>Speaker plays a 3 · 2 · 1 countdown</small></div></div><div class="event"><i class="event-dot"></i><div class="event-text">Live audio + camera session begins<small>Doctor reviews feed, then assigns patient</small></div></div></div></section></div></main></div>
+<div class="columns"><section class="card"><div class="cardhead"><div><div class="cardtitle">Vital signs</div><div class="sub">Smart monitor · connect MQTT for live sensor readings</div></div><div class="mqtt">MQTT · NOT CONNECTED</div></div><div class="metric-grid"><div style="grid-column:1/-1;font-size:10px;color:#92400e;background:#fffbeb;padding:8px 10px;border-radius:5px">No live sensor feed connected. Values will appear after MQTT is integrated.</div><div class="metric"><div class="metric-head"><span>Heart rate</span><span>♡</span></div><div class="metric-val">— <span class="unit">bpm</span></div><div class="trend">Waiting for MQTT data</div><div class="spark"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 14 L10 13 L18 16 L26 7 L34 17 L42 13 L51 14 L58 8 L66 16 L75 12 L84 14 L93 5 L101 15 L110 12 L120 13"/></svg></div></div><div class="metric"><div class="metric-head"><span>SpO₂</span><span>◉</span></div><div class="metric-val">— <span class="unit">%</span></div><div class="trend">Waiting for MQTT data</div><div class="spark"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 14 L12 13 L24 15 L35 12 L47 14 L58 13 L70 15 L82 12 L94 14 L106 12 L120 13"/></svg></div></div><div class="metric"><div class="metric-head"><span>IR signal</span><span>⌁</span></div><div class="metric-val">—</div><div class="trend">MAX30105 · raw signal</div><div class="spark"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 15 L8 14 L14 5 L20 18 L28 13 L35 14 L43 6 L50 17 L58 12 L66 14 L73 4 L80 17 L89 12 L98 13 L106 5 L114 17 L120 13"/></svg></div></div><div class="metric"><div class="metric-head"><span>RED signal</span><span>⌁</span></div><div class="metric-val">—</div><div class="trend">MAX30105 · raw signal</div><div class="spark warn"><svg viewBox="0 0 120 22" preserveAspectRatio="none"><path d="M0 14 L9 13 L16 6 L23 17 L31 12 L40 13 L47 5 L55 16 L63 12 L72 14 L80 4 L88 16 L97 11 L105 13 L113 5 L120 14"/></svg></div></div></div></section>
+<section class="card"><div class="cardhead"><div><div class="cardtitle">Device & connection</div><div class="sub">Medicart status and data stream</div></div><span class="tag">MC-204</span></div><div class="events"><div class="event"><i class="event-dot"></i><div class="event-text">MQTT not connected<small>Configure a broker and sensor topic before using live readings.</small></div></div><div class="event"><i class="event-dot blue"></i><div class="event-text">Call audio unavailable<small>Connect the Pi and allow microphone access to start a call.</small></div></div><div class="event"><i class="event-dot"></i><div class="event-text">Waiting for Pi camera<small>The Pi must connect and publish the OpenCV video track.</small></div></div><div class="event"><i class="event-dot gray"></i><div class="event-text">Device sync<small>No live device status received yet.</small></div></div></div></section></div>
+<div class="bottom"><section class="card"><div class="cardhead"><div><div class="cardtitle">Recent activity</div><div class="sub">Latest events from this Medicart</div></div><span class="tag">TODAY</span></div><div class="events"><div class="event"><i class="event-dot"></i><div class="event-text">No sensor data received<small>Connect the MQTT feed to show live vitals.</small></div></div><div class="event"><i class="event-dot blue"></i><div class="event-text">Camera is waiting<small>Live video appears after the Pi joins the WebRTC call.</small></div></div><div class="event"><i class="event-dot gray"></i><div class="event-text">Pi connection required<small>Connect the Pi to the signaling service first.</small></div></div></div></section><section class="card"><div class="cardhead"><div><div class="cardtitle">Call flow</div><div class="sub">What happens when you call</div></div><span class="tag">2-WAY AUDIO</span></div><div class="events"><div class="event"><i class="event-dot"></i><div class="event-text">Doctor starts call from dashboard<small>Browser requests microphone access</small></div></div><div class="event"><i class="event-dot blue"></i><div class="event-text">Medicart announces “Connecting to doctor”<small>Speaker plays a 3 · 2 · 1 countdown</small></div></div><div class="event"><i class="event-dot"></i><div class="event-text">Live audio + camera session begins<small>Doctor reviews feed, then assigns patient</small></div></div></div></section></div></main></div>
 <div class="modalback" id="modal"><div class="modal"><button class="modalclose" id="close">×</button><div class="bigphone">☎</div><span class="tag live">CONNECTING</span><h2 id="callHeading">Calling Medicart</h2><p id="callDescription">Medicart speaker will announce “Connecting to doctor,” then count down before audio opens.</p><div class="count" id="count">3</div><div class="modalstatus" id="modalStatus">Starting call sequence…</div><button class="endbtn" id="end">End call</button></div></div><div class="toast" id="toast"></div>
 <script>
-const modal=document.getElementById('modal'), count=document.getElementById('count'), status=document.getElementById('modalStatus');let timer=null,step=3,connected=false;
-function toast(t){let el=document.getElementById('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2400)}
-function speak(t){if('speechSynthesis'in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.rate=.88; speechSynthesis.speak(u)}}
-function start(){modal.classList.add('show');step=3;connected=false;count.style.display='block';count.textContent='3';document.getElementById('callHeading').textContent='Calling Medicart';document.getElementById('callDescription').textContent='Medicart speaker will announce “Connecting to doctor,” then count down before audio opens.';status.textContent='Starting call sequence…';speak('Connecting to doctor. Three. Two. One.');clearInterval(timer);timer=setInterval(()=>{step--;if(step>0){count.textContent=step;status.textContent='Medicart speaker · '+step+'…'}else{clearInterval(timer);count.style.display='none';connected=true;document.getElementById('callHeading').textContent='Call connected';document.getElementById('callDescription').textContent='The demo call is active. Connect your audio and camera services to enable real two-way communication.';status.textContent='Audio session · Demo mode';document.querySelector('.tag.live').textContent='CONNECTED';document.getElementById('startCall').textContent='☎  Call connected';document.getElementById('startCall').style.background='#426d60';}},1000)}
-function end(){clearInterval(timer);speechSynthesis?.cancel();modal.classList.remove('show');document.querySelector('.tag.live').textContent='LIVE PREVIEW';document.getElementById('startCall').innerHTML='☎ &nbsp; Call Medicart';document.getElementById('startCall').style.background='';}
-document.getElementById('startCall').onclick=start;document.getElementById('close').onclick=end;document.getElementById('end').onclick=end;modal.addEventListener('click',e=>{if(e.target===modal)end()});
-document.getElementById('assign').onclick=()=>{let name=document.getElementById('patientName').value.trim(),id=document.getElementById('patientId').value.trim(),ward=document.getElementById('ward').value;if(!name||!id){toast('Enter patient name and ID to assign.');return}if(!ward){toast('Choose a ward or bed location.');return}let box=document.getElementById('patientState');box.style.borderStyle='solid';box.style.borderColor='#cfe6d9';box.style.background='#f1faf5';box.innerHTML='<strong style="color:#287354">✓ &nbsp;Patient assigned</strong><p>'+name+' · '+id+'<br>'+ward+'</p>';document.getElementById('assign').textContent='✓  Patient linked to session';toast('Patient linked to Medicart session.')};
-document.getElementById('snapshot').onclick=()=>toast('Camera stream is a demo placeholder.');
+(() => {
+  'use strict';
+  const SIGNAL_URL = 'wss://medicartv2.onrender.com/signal';
+  const ICE_SERVERS = [{ urls: 'stun:stun.l.google.com:19302' }];
+  const el = (id) => document.getElementById(id);
+  const modal = el('modal');
+  let socket = null;
+  let pc = null;
+  let localAudio = null;
+  let activeCallId = null;
+  let pendingIce = [];
+  let callStartedAt = 0;
+  let durationTimer = null;
+
+  function toast(message) {
+    const box = el('toast');
+    box.textContent = message;
+    box.classList.add('show');
+    setTimeout(() => box.classList.remove('show'), 3200);
+  }
+  function setSignalState(message, online = false) {
+    el('signalState').textContent = message;
+    el('signalState').classList.toggle('online', online);
+    el('headerState').textContent = online ? '●  SIGNALING ONLINE' : '●  SIGNALING OFFLINE';
+    el('deviceStatus').textContent = online ? 'Waiting for calls · connected' : 'Offline · not connected';
+  }
+  function send(message) {
+    if (!socket || socket.readyState !== WebSocket.OPEN) throw new Error('Signaling is not connected.');
+    socket.send(JSON.stringify(message));
+  }
+  function connectSignal() {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+      toast('Signaling is already connected.');
+      return;
+    }
+    const token = el('doctorToken').value.trim();
+    if (!token) { toast('Enter a short-lived doctor access token first.'); el('doctorToken').focus(); return; }
+    const url = new URL(SIGNAL_URL);
+    url.searchParams.set('token', token);
+    setSignalState('Connecting securely to the Medicart signaling service…');
+    socket = new WebSocket(url.toString());
+    socket.onopen = () => {
+      setSignalState('Connected to signaling. Checking Medicart…', true);
+      el('deviceName').textContent = 'Medicart · ' + el('cartId').value.trim();
+    };
+    socket.onmessage = async (event) => {
+      let message;
+      try { message = JSON.parse(event.data); }
+      catch { toast('Received an unreadable signaling message.'); return; }
+      try { await handleSignal(message); }
+      catch (error) { console.error(error); toast(error.message || 'Call setup failed.'); await finishCall(false); }
+    };
+    socket.onerror = () => setSignalState('Could not connect. Check the token and service URL.');
+    socket.onclose = (event) => {
+      socket = null;
+      setSignalState(event.code === 1008 || event.code === 4401 ? 'Access token rejected or expired.' : 'Signaling disconnected.');
+      finishCall(false);
+    };
+  }
+  function createPeerConnection() {
+    const peer = new RTCPeerConnection({ iceServers: ICE_SERVERS });
+    peer.addTransceiver('video', { direction: 'recvonly' });
+    peer.ontrack = (event) => {
+      if (event.track.kind !== 'video') return;
+      const video = el('remoteVideo');
+      video.srcObject = event.streams[0] || new MediaStream([event.track]);
+      video.play().catch(() => {});
+      el('videoCard').classList.add('streaming');
+      el('cameraState').textContent = '● OpenCV stream · receiving';
+      el('cameraBadge').textContent = 'LIVE · PI STREAM';
+      el('videoStats').textContent = 'Medicart camera connected';
+    };
+    peer.onicecandidate = (event) => {
+      if (activeCallId && socket?.readyState === WebSocket.OPEN) {
+        send({ type: 'webrtc.ice', callId: activeCallId, candidate: event.candidate ? event.candidate.toJSON() : null });
+      }
+    };
+    peer.onconnectionstatechange = () => {
+      if (peer.connectionState === 'connected') {
+        callStartedAt = Date.now();
+        el('callHeading').textContent = 'Call connected';
+        el('callDescription').textContent = 'Live WebRTC audio is connected. The Medicart camera will appear here.';
+        el('modalStatus').textContent = 'Secure peer connection active';
+        el('count').style.display = 'none';
+        el('startCall').textContent = '☎  Call connected';
+        el('startCall').style.background = '#426d60';
+        el('mediaState').textContent = 'Encrypted WebRTC media · connected';
+        clearInterval(durationTimer);
+        durationTimer = setInterval(() => {
+          if (callStartedAt) el('videoTime').textContent = new Date(Date.now() - callStartedAt).toISOString().slice(11, 19);
+        }, 1000);
+      } else if (peer.connectionState === 'failed') {
+        el('modalStatus').textContent = 'Network path failed. TURN may be required.';
+      }
+    };
+    return peer;
+  }
+  async function handleSignal(message) {
+    switch (message.type) {
+      case 'connected':
+        setSignalState('Connected as ' + message.role + '. Waiting for a call.', true);
+        break;
+      case 'cart.status':
+        if (message.cartId === el('cartId').value.trim()) {
+          el('deviceStatus').textContent = message.online ? 'Online · waiting for calls' : 'Cart offline';
+          setSignalState(message.online ? 'Medicart is online and ready.' : 'Medicart is offline.', message.online);
+        }
+        break;
+      case 'call.ringing':
+        activeCallId = message.callId;
+        el('callHeading').textContent = 'Calling Medicart';
+        el('callDescription').textContent = 'Waiting for the cart to announce the call and accept.';
+        el('modalStatus').textContent = 'Call request sent to ' + message.cartId;
+        el('count').style.display = 'block';
+        el('count').textContent = '…';
+        modal.classList.add('show');
+        break;
+      case 'call.accepted':
+        if (!pc) throw new Error('Peer connection was not prepared.');
+        el('callHeading').textContent = 'Connecting audio and video';
+        el('callDescription').textContent = 'Negotiating the secure WebRTC connection with the Medicart.';
+        el('modalStatus').textContent = 'Exchanging WebRTC offer and answer…';
+        await pc.setLocalDescription(await pc.createOffer());
+        send({ type: 'webrtc.offer', callId: activeCallId, sdp: pc.localDescription.sdp });
+        break;
+      case 'webrtc.answer':
+        if (!pc) throw new Error('Received an answer without an active call.');
+        await pc.setRemoteDescription({ type: 'answer', sdp: message.sdp });
+        for (const candidate of pendingIce) await pc.addIceCandidate(candidate);
+        pendingIce = [];
+        break;
+      case 'webrtc.ice':
+        if (!pc) return;
+        if (!pc.remoteDescription) pendingIce.push(message.candidate);
+        else if (message.candidate) await pc.addIceCandidate(message.candidate);
+        break;
+      case 'call.rejected':
+        toast('The Medicart did not accept the call.');
+        await finishCall(false);
+        break;
+      case 'call.failed':
+        toast('Call could not start: ' + message.code);
+        await finishCall(false);
+        break;
+      case 'call.ended':
+        toast(message.reason === 'connection_lost' ? 'Call ended because a peer disconnected.' : 'Call ended.');
+        await finishCall(false);
+        break;
+      case 'error':
+        toast('Signaling error: ' + message.code);
+        break;
+      default:
+        console.info('Ignoring signaling message:', message.type);
+    }
+  }
+  async function startCall() {
+    if (!socket || socket.readyState !== WebSocket.OPEN) {
+      toast('Connect to the signaling service first.');
+      return;
+    }
+    const cartId = el('cartId').value.trim();
+    if (!cartId) { toast('Enter the Medicart device ID.'); return; }
+    if (pc) await finishCall(false);
+    try {
+      localAudio = await navigator.mediaDevices.getUserMedia({ audio: true, video: false });
+      pc = createPeerConnection();
+      for (const track of localAudio.getAudioTracks()) pc.addTrack(track, localAudio);
+      pendingIce = [];
+      el('callDescription').textContent = 'Requesting the Medicart. Its speaker will announce the call before answering.';
+      el('modalStatus').textContent = 'Sending call request…';
+      el('count').textContent = '…';
+      modal.classList.add('show');
+      send({ type: 'call.request', cartId });
+    } catch (error) {
+      await finishCall(false);
+      toast(error.name === 'NotAllowedError' ? 'Allow microphone access in your browser, then try again.' : (error.message || 'Could not start call.'));
+    }
+  }
+  async function finishCall(notifyPeer) {
+    clearInterval(durationTimer);
+    if (notifyPeer && activeCallId && socket?.readyState === WebSocket.OPEN) {
+      try { send({ type: 'call.end', callId: activeCallId }); } catch {}
+    }
+    activeCallId = null;
+    callStartedAt = 0;
+    pendingIce = [];
+    if (pc) { pc.ontrack = null; pc.close(); pc = null; }
+    if (localAudio) { localAudio.getTracks().forEach((track) => track.stop()); localAudio = null; }
+    el('remoteVideo').srcObject = null;
+    el('videoCard').classList.remove('streaming');
+    el('cameraState').textContent = '● OpenCV stream · offline';
+    el('cameraBadge').textContent = 'WAITING FOR PI';
+    el('videoStats').textContent = 'No incoming video';
+    el('mediaState').textContent = 'Encrypted WebRTC media · awaiting call';
+    el('startCall').innerHTML = '☎ &nbsp; Call Medicart';
+    el('startCall').style.background = '';
+    el('count').style.display = 'block';
+    el('count').textContent = '—';
+    el('modalStatus').textContent = 'Call ended';
+    modal.classList.remove('show');
+  }
+  function disconnectSignal() {
+    if (activeCallId) finishCall(true);
+    if (socket) { socket.onclose = null; socket.close(1000, 'doctor_disconnected'); socket = null; }
+    setSignalState('Signaling disconnected.');
+  }
+
+  el('startCall').addEventListener('click', startCall);
+  el('end').addEventListener('click', () => finishCall(true));
+  el('close').addEventListener('click', () => finishCall(true));
+  modal.addEventListener('click', (event) => { if (event.target === modal) finishCall(true); });
+  el('connectSignal').addEventListener('click', connectSignal);
+  el('disconnectSignal').addEventListener('click', disconnectSignal);
+  el('assign').addEventListener('click', () => {
+    const name = el('patientName').value.trim();
+    const id = el('patientId').value.trim();
+    const ward = el('ward').value;
+    if (!name || !id) { toast('Enter patient name and ID to assign.'); return; }
+    if (!ward) { toast('Choose a ward or bed location.'); return; }
+    const box = el('patientState');
+    box.style.borderStyle = 'solid'; box.style.borderColor = '#cfe6d9'; box.style.background = '#f1faf5';
+    const title = document.createElement('strong'); title.style.color = '#287354'; title.textContent = '✓  Patient assigned';
+    const details = document.createElement('p'); details.textContent = `${name} · ${id} — ${ward}`;
+    box.replaceChildren(title, details);
+    el('assign').textContent = '✓  Patient linked to session';
+    toast('Patient linked to this dashboard session.');
+  });
+  el('snapshot').addEventListener('click', () => {
+    if (!el('remoteVideo').srcObject) { toast('No live camera stream is connected.'); return; }
+    const canvas = document.createElement('canvas');
+    canvas.width = el('remoteVideo').videoWidth; canvas.height = el('remoteVideo').videoHeight;
+    canvas.getContext('2d').drawImage(el('remoteVideo'), 0, 0);
+    const link = document.createElement('a'); link.download = 'medicart-snapshot.png'; link.href = canvas.toDataURL('image/png'); link.click();
+  });
+})();
 </script></body></html>
